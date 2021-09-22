@@ -98,34 +98,28 @@ tipButtons.forEach(btn => {
         }
         
         overallTip = ((targetBtnValue / 100) * billValue);
-    tipPerPerson = overallTip / numOfPeople;
+        tipPerPerson = overallTip / numOfPeople;
     
-    overallPerPerson = billValue - overallTip;
-    totalPerPerson = overallPerPerson / numOfPeople;
+        overallPerPerson = billValue - overallTip;
+        totalPerPerson = overallPerPerson / numOfPeople;
     
-    if(isNaN(tipPerPerson)){
-        tipPerPerson = 0
-    }
-    if(isNaN(totalPerPerson)){
-        totalPerPerson = 0
-    }
+        if(isNaN(tipPerPerson)){
+            tipPerPerson = 0
+        }
+        if(isNaN(totalPerPerson)){
+            totalPerPerson = 0
+        }   
     
-    if(!btnClassList.contains('custom')){
-        customBtn.value = ''
-    }
+        if(!btnClassList.contains('custom')){
+            customBtn.value = ''
+        }
 
-    tipPerHead.textContent = tipPerPerson.toFixed(2);  // To convert to two decimal places
-    totalPerHead.textContent = totalPerPerson.toFixed(2);
-        // Changing the background when btn is clicked
-
+        tipPerHead.textContent = tipPerPerson.toFixed(2);  // To convert to two decimal places
+        totalPerHead.textContent = totalPerPerson.toFixed(2);
         
-        //changeValue()
     })
 })
 
-function btnClick(){
-    
-}
 
 const colOne = document.querySelector('.col-one')
 colOne.addEventListener('click', function(){
@@ -142,5 +136,6 @@ form.addEventListener('submit', (e) => {
     totalPerHead.textContent = '0.00' ;
     inputBill.value = ""
     numOfPerson.value = ""
+    customBtn.value = ''
 })
 
