@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://fonts.google.com/specimen/Space+Mono">
+  <title>Frontend Mentor | Tip calculator app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <div class="splitter">
+    <img src="images/logo.svg" alt="splitter-logo">
+  </div>
+  <form action="" id="form">
+    <div class="main">
+      <div class="col-one">
+      <p class="heading"> Bill</p>
+        <div class="total">
+          <img src="images/icon-dollar.svg" alt="dollar">
+          <input type="text" name="bill" id="bill" placeholder="0">
+        </div>
+        <p class="heading">Select Tip %</p>
+        <div class="btns">
+          <input class="btn" type="button" data-id="5" value="5%">
+          <input class="btn" type="button" data-id="10" value="10%">
+          <input class="btn" type="button" data-id="15" value="15%">
+          <input class="btn" type="button" data-id="25" value="25%">
+          <input class="btn" type="button" data-id="50" value="50%">
+          <input class="
+          btn custom custom-rate custom-active" type="text" placeholder="Custom">
+        </div>
+        <div class="error">
+          <p class="heading">Number of People</p>
+          <p class="error-message ">Can't be zero</p>
+        </div>
+        <div class="total number-of-people ">
+          <img src="images/icon-person.svg" alt="dollar">
+          <input type="text" name="bill"  id="num-of-person" placeholder="0">
+        </div>
+      </div>
+      <div class="col-two">
+        <div class="mini-col">
+          <div class="tip-rate tip-rate-one">
+            <div class="amount">Tip Amount</div>
+            <div class="person">/ person</div>
+          </div>
+          <div class="amount-per-head tip-per-head">
+            <div class="sign">$</div>
+            <div class="per-head tip-head">0.00</div>
+          </div>
+        </div>
+        <div class="mini-col mini-col-two">
+          <div class="tip-rate tip-rate-two">
+            <div class="amount">Total</div>
+            <div class="person">/ person</div>
+          </div>
+          <div class="amount-per-head reduced-amount">
+            <div class="sign">$</div>
+            <div class="per-head total-head">0.00</div>
+          </div>
+        </div>
+        <button class="submit"> Reset</button>
+      </div>
+    </div>
+  </form>
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://emmaawesome.netlify.app/">Emmanuel Yeboah</a>.
+  </div>
+</body>
+<script src="app.js"></script>
+</html>
