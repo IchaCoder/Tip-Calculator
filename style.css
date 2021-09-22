@@ -268,9 +268,7 @@ button:hover{
         
         max-width: 70%;
     }
-    .btn, .custom{
-        /* width: 75px; */
-    }
+    
 }
 @media only screen and (min-width: 1280px){
     .btns{
@@ -286,8 +284,5 @@ button:hover{
     .main{
         grid-gap: 0;
         max-width: 55%;
-    }
-    .btn, .custom{
-        /* width: 75px; */
     }
 }

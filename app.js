@@ -96,17 +96,8 @@ tipButtons.forEach(btn => {
                 btnClassList.add('clicked')
             })
         }
-        setInterval(btnClick(), 100)
         
-        // Changing the background when btn is clicked
-
-        ;
-        //changeValue()
-    })
-})
-
-function btnClick(){
-    overallTip = ((valueBtn / 100) * billValue);
+        overallTip = ((targetBtnValue / 100) * billValue);
     tipPerPerson = overallTip / numOfPeople;
     
     overallPerPerson = billValue - overallTip;
@@ -125,6 +116,15 @@ function btnClick(){
 
     tipPerHead.textContent = tipPerPerson.toFixed(2);  // To convert to two decimal places
     totalPerHead.textContent = totalPerPerson.toFixed(2);
+        // Changing the background when btn is clicked
+
+        
+        //changeValue()
+    })
+})
+
+function btnClick(){
+    
 }
 
 const colOne = document.querySelector('.col-one')
